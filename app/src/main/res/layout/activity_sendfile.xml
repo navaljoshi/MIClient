@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="310dip"
+    android:layout_marginTop="10dip"
+    android:background="#DDDDDD" >
+
+    <TextView
+        android:id="@+id/head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="MI Connection Settings"
+        android:textColor="#0000ff"
+        android:textSize="10pt" />
+
+    <TextView
+        android:id="@+id/tv_ip"
+        android:layout_width="125dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/head"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="9dip"
+        android:layout_marginTop="20dip"
+        android:text="IP Address"
+        android:textColor="#444444"
+        android:textSize="10pt" />
+
+    <EditText
+        android:id="@+id/et_ip"
+        android:layout_width="150dip"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/tv_ip"
+        android:layout_toRightOf="@id/tv_ip"
+        android:background="@android:drawable/editbox_background" />
+
+    <TextView
+        android:id="@+id/tv_port"
+        android:layout_width="125dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/tv_ip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="9dip"
+        android:layout_marginTop="15dip"
+        android:text="Port"
+        android:textColor="#444444"
+        android:textSize="10pt" />
+
+    <EditText
+        android:id="@+id/et_port"
+        android:layout_width="150dip"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/tv_port"
+        android:layout_below="@id/et_ip"
+        android:layout_toRightOf="@id/tv_port"
+        android:layout_alignLeft="@+id/et_ip"
+        android:background="@android:drawable/editbox_background" />
+
+    <TextView
+        android:id="@+id/tv_clientport"
+        android:layout_width="125dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/tv_port"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="9dip"
+        android:layout_marginTop="15dip"
+        android:text="Client Port"
+        android:textColor="#444444"
+        android:textSize="10pt" />
+
+    <EditText
+        android:id="@+id/et_clientport"
+        android:layout_width="150dip"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/tv_clientport"
+        android:layout_below="@id/et_port"
+        android:layout_toRightOf="@id/tv_clientport"
+        android:layout_alignLeft="@+id/et_port"
+        android:background="@android:drawable/editbox_background" />
+
+    <Button
+        android:id="@+id/btn_Save"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/et_clientport"
+        android:layout_marginLeft="110dip"
+        android:layout_marginTop="15dip"
+        android:text="Save" />
+
+</RelativeLayout>
